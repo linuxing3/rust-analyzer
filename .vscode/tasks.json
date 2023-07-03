@@ -1,0 +1,27 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "current_scene",
+            "type": "shell",
+            "command": "cd raytracer && cargo run data/current_scene.json one.png"
+        },
+        {
+            "label": "one_scene",
+            "type": "shell",
+            "command": "cd raytracer && cargo run data/one_scene.json one.png"
+        },
+        {
+            "label": "test_scene",
+            "type": "shell",
+            "command": "cd raytracer && cargo run data/test_scene.json test.png"
+        },
+        {
+            "label": "cover_scene",
+            "type": "shell",
+            "command": "cd raytracer && cargo run data/cover_scene.json cover.png"
+        }
+    ]
+}
